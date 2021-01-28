@@ -5,30 +5,52 @@ a{
     text-decoration : none;
     color :black;
 }
-aside{
-    background : #254117;
-    margin-left : 0;
-    color : white;
-    height : 100vh;
+
+header{
+    background : #8e9091;
 }
-main{
-    background : #FCDFFF;
-    height : 100vh;
-    margin : 0
+header h1{
+    font-size: 24px
+}
+footer{
+    position : fixed;
+    left:0;
+    bottom:0;
+    height : 50px;
+}
+
+.corps{
+    margin-left : 0;
 }
 #avatar img{
     border-radius : 50%;
     height : 150px;
     box-shadow : 0 0 5px black;
 }
-#entete{
-    background :  #fff url('./images/bgmain.jpg');
-    background-size : 100%;
-}
 #social-link{
     font-size : 1.8em;
     display : flex;
-    justify-content : space-around
+    justify-content : space-around;
+   
+}
+#social-link i {
+    color : #f1da5c;
+}
+nav{
+    color : white
+}
+/* Partie droite */
+#entete{
+    background : #FCDFFF url('./ima ges/bgmain.jpg') no-repeat fixed;
+    background-size : 100%;
+    height : 100vh;
+    
+}
+main{
+    background : #FCDFFF;
+}
+#apropos{
+    height : 100vh;
+    background : white;
 
 }
-m
