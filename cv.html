@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#menu" data-offset="50" tabindex="0">
 <div class="container-fluid corps col-12">
         <header class="col-lg-2 d-flex flex-column vh-100 position-fixed">
             <div id="avatar" class="text-center mt-3"><img src="./assets/images/avatar.png" alt="">
-            <h1 class="text-light mt-2 glow fw-bold">Arshess Buvelle</h1></div>
+            <h1 class="text-light mt-2 gl ow fw-bold">Arshess Buvelle</h1></div>
                 <div id="social-link" class="mt-1 text-center d-flex justify-content-evenly">
                     <a href="https://www.linkedin.com/in/jeremy-andrieux/"><i class="bi bi-linkedin"></i></a>
                     <a href="https://github.com/arshess/"><i class="bi bi-github"></i></a>
-                    <a href="#" id="link-Discord" data-bs-toggle="popover" data-bs-trigger="focus" title="Copié !">
+                    <a href="#" id="link-Discord" data-bs-toggle="popover" data-bs-trigger="focus" title="Copié !"data-bs-content="Identifiant copié. Plus qu'a m'ajouter en ami.">
                         <i id="btn-discord" class="bi bi-discord"></i>
-                        <span id="tocopy" class="d-none" >Arshess#1700</span>
+                        <span id="tocopy" class="d-none">Arshess#1700</span>
                     </a>                 
                 </div>
-                <nav class="h-100">
-                    <ul class="h-100 d-flex flex-column justify-content-evenly fw-bold fs-5">
-                        <li><a href="#apropos"> A propos</a></li>
-                        <li><a href="#cv"> CV</a></li>                
-                        <li><a href="#competences"> Compétences</a></li>                
-                        <li><a href="#portfolio"> Port-folio</a></li>
-                        <li><a href="#contact"> Contact</a></li>
+                <nav id="menu" class="navbar h-100">
+                    <ul class="nav h-100 d-flex flex-column justify-content-evenly fw-bold fs-5">
+                        <li class="nav-item"><a class="nav-link" href="#apropos"> A propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cv"> CV</a></li>                
+                        <li class="nav-item"><a class="nav-link" href="#competences"> Compétences</a></li>                
+                        <li class="nav-item"><a class="nav-link" href="#portfolio"> Port-folio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact"> Contact</a></li>
                     </ul>
                 </nav>
                 
@@ -36,10 +36,13 @@
                 <p>© Copyright by moi 2k21</p> 
             </footer>
         </header>
-        <div id="main" class="col-lg-10 offset-lg-2">
+        <!--////////////      
+        Partie de droite 
+        /////////////-->
+        <div id="main" class="col-lg-10 offset-lg-2" >
             <section id="entete" class="d-flex flex-column justify-content-center align-items-center">
-                <p class="leheros">Salut, c'est Arshess</p>
-                <p class="lalegendeduheros">c'est moi</p>
+                <p id="leheros" class="fw-bold text-light">Salut, c'est Arshess</p>
+                <p id="lalegendeduheros">c'est moi</p>
             </section>
             <main>
                 <section id="apropos" class="vh-100">
@@ -49,7 +52,7 @@
                 <section id="competences"><h2>Compétences</h2></section>
                 <section id="portfolio">
                     <h2>PortFolio</h2>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleIndicators" class=" col-8 offset-2 carousel carousel-fade touch slide" data-bs-ride="carousel">
                         <ol class="carousel-indicators">
                           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
                           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
@@ -57,13 +60,16 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./assets/images/1.jpg" class="img-caroussel d-block" alt="...">
+                            <img src="./assets/images/1.jpg" class="img-caroussel w-100 d-block" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="./assets/images/2.jpg" class="img-caroussel d-block" alt="...">
+                            <img src="./assets/images/2.jpg" class="img-caroussel w-100 d-block" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="./assets/images/3.jpg" class="img-caroussel d-block" alt="...">
+                            <img src="./assets/images/3.jpg" class="img-caroussel w-100 d-block" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/2.jpg" class="img-caroussel w-100 d-block" alt="...">
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
@@ -80,6 +86,43 @@
                 <section id=""></section>
             </main>
             
+
+            <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#fat">@fat</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mdo">@mdo</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#one">one</a></li>
+                    <li><a class="dropdown-item" href="#two">two</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#three">three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div id="truc" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
+              <h4 id="fat">@fat</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic quisquam nulla, doloribus et at fuga illo! Nostrum maxime earum doloremque temporibus dignissimos aspernatur sit facere dolor fuga! Corporis odio consequatur amet velit odit. Ducimus sequi nulla asperiores quibusdam debitis, consequuntur voluptates quasi dolorem inventore et doloremque doloribus distinctio maxime.</p>
+              <h4 id="mdo">@mdo</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facere exercitationem id enim nam, facilis nisi reprehenderit voluptate aperiam officia est sequi consequuntur hic blanditiis optio incidunt iure suscipit voluptates porro molestias. Fugit eos sapiente deleniti praesentium, deserunt veniam totam dolore incidunt ullam exercitationem architecto perspiciatis consequuntur commodi voluptates voluptatem!</p>
+              <h4 id="one">one</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sapiente, quos illo molestiae suscipit et amet commodi cum autem, est dolor praesentium deserunt reiciendis dolore delectus quo quod doloremque necessitatibus recusandae laudantium, non ducimus! Quisquam perspiciatis ratione, velit autem minima tempora mollitia cum quas distinctio odio nam ducimus veritatis cupiditate?</p>
+              <h4 id="two">two</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa debitis voluptatum sint repudiandae vero laborum animi. Excepturi delectus deleniti impedit sapiente et explicabo ipsa, est similique culpa, soluta sequi dolorum mollitia. Aliquid sunt ipsum omnis! Consequatur tenetur doloremque ad dolores adipisci nulla modi iste hic, animi impedit beatae blanditiis.</p>
+              <h4 id="three">three</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit vero deleniti. Ipsam deserunt aspernatur dolore quo, quam maxime velit, harum maiores repudiandae impedit officia laudantium molestias in nihil eaque dolor nesciunt, tempore dolores mollitia voluptate odit commodi quasi facilis atque. Quam architecto dolor vel veniam quaerat nihil harum rem distinctio, consectetur suscipit reiciendis minima nemo unde deleniti voluptatem. Exercitationem laudantium fuga quasi repellendus dolore suscipit ex inventore quis obcaecati, quia ullam quisquam odit facere corrupti, distinctio cupiditate, omnis quam mollitia deserunt a rerum. Pariatur doloremque vero quia explicabo ab repellendus praesentium at corporis accusamus, mollitia velit voluptatum libero facilis tempore eum. Incidunt obcaecati expedita architecto omnis quibusdam animi eius officiis? Quaerat aliquid sequi tempora blanditiis? Reiciendis autem illo molestiae amet quia laboriosam quibusdam sint hic voluptas suscipit facilis placeat fugiat ex eum neque, adipisci accusamus impedit voluptatum corrupti repudiandae deleniti! Ad itaque modi illo. Eos doloremque expedita necessitatibus quibusdam sit mollitia cum ab magnam id. Consequatur, cumque vero. Ipsum earum odio assumenda dolorum, voluptas corporis error, dolore temporibus, consequuntur qui impedit eos ratione necessitatibus cum voluptate maxime nostrum accusamus fuga. Saepe quasi vel facilis, nostrum voluptatem, quibusdam perspiciatis labore repellat eius sequi aut soluta quam corrupti ipsa. Quisquam voluptatibus quis sapiente tenetur sequi rem pariatur saepe, ipsam odit ratione accusamus fuga magni alias eaque corrupti dolores veniam iste excepturi. Doloribus illum, iste atque cupiditate at eum a, perferendis ipsa iusto fuga quia enim eligendi nisi dignissimos asperiores nihil corrupti dolores quasi fugiat reiciendis repellat ullam vero. Dignissimos sint architecto assumenda ut nemo eos consectetur aliquam deserunt officia. Soluta molestias hic fuga ut nobis accusantium laboriosam provident reprehenderit delectus amet iste nulla corrupti dolorum, libero culpa eum sed recusandae ratione iusto maxime expedita tempore illo? Sequi consectetur dignissimos ad. Nulla doloremque dolorem quod iusto! Voluptate voluptatem explicabo, aut eum sapiente dignissimos similique ea quam? Atque praesentium neque optio facere, molestiae omnis fugit eaque libero consequatur? Nobis adipisci maiores nostrum blanditiis, velit consequuntur aperiam ipsam sapiente minima possimus eius officia similique! Est provident alias optio eos impedit ut velit, mollitia dolorum, consequatur quo laboriosam, quis inventore? Omnis, inventore, laudantium cumque dolorum ratione expedita consectetur harum quis placeat voluptas, incidunt minima! Recusandae nisi temporibus ut! Obcaecati, veniam quam natus consectetur vero cum facilis voluptatibus repellendus, harum pariatur veritatis! Earum fuga eius accusantium! Suscipit inventore distinctio nobis ut velit repellendus est, quod aliquid. Aut beatae omnis similique, ratione sit magnam delectus! Ea aperiam quaerat eos voluptate molestiae, autem quidem distinctio voluptas, reprehenderit vel veritatis nostrum. Nesciunt tempore culpa praesentium totam eius, ipsam nisi, amet ipsa explicabo ea esse, beatae adipisci minima minus! Totam quod velit quaerat pariatur, eos, ipsam odio nemo sed aliquid expedita vel commodi repudiandae? Saepe quae similique quam incidunt at atque sed laudantium reprehenderit exercitationem iste fugit quibusdam quod doloribus deserunt molestiae illum voluptate optio, aliquam aperiam hic! Porro dolores nemo libero rem debitis aut adipisci eaque. Iure expedita quod illum laboriosam quisquam, tempora recusandae modi ea harum consectetur quidem ullam aspernatur dolorum error ratione aliquid repellat reiciendis veniam qui! Sapiente iusto cupiditate magni eveniet, minus labore dolorem quas. Est doloribus dolorem quas labore facilis eaque culpa, magni dolorum obcaecati temporibus quis quae inventore saepe officia voluptatum maiores tempora commodi voluptatem vitae ad ex nulla ab iure dolores. Vel, hic.</p>
+            </div>
+            
+
+
+
         </div>
     </div>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -87,3 +130,4 @@
     <script src="./assets/script.js"></script>
 </body>
 </html>
+
