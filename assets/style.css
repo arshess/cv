@@ -38,7 +38,7 @@ header h1{
 #social-link i:hover{
     transition 
 }
-.active{
+.active a{
     color : #F5DF4D;
 }
 nav{
