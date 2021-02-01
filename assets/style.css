@@ -19,11 +19,10 @@ body{
 /* Header */
 header, header a{
     background : #939597;
-    color : white
+    color : white;
 }
 header h1{
-    font-size: 2em; 
-
+    font-size: 2em;
 }
 
 #avatar img{
@@ -34,9 +33,6 @@ header h1{
 #social-link i {
     font-size : 1.8em;
     color : #F5DF4D;
-}
-#social-link i:hover{
-    transition 
 }
 .active a{
     color : #F5DF4D;
@@ -49,8 +45,8 @@ nav a:hover{
 }
 /* Partie droite */
 #entete{
-    background : #FCDFFF url('./images/bgmain3.jpg') no-repeat fixed;
-    filter: sepia() hue-rotate(-60deg) contrast(1.4) brightness(0.9);
+    background : #FCDFFF url('./images/bgmain4.jpg') no-repeat fixed;
+    filter: /* sepia() */ hue-rotate(-60deg) contrast(0.8) brightness(0.8);
     background-size : 100%;
     height : 100vh;    
 }

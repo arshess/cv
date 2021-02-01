@@ -36,12 +36,12 @@ $(function(){
             if (cur_pos <= bottom) {
                 main_nav.find('li').removeClass('active');
             }
-            console.log(main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li'));
+            // console.log(main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li'));
             // main_nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
             main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
         }
         if (cur_pos < 300) {
-            $(".nav-menu ul:first li:first").addClass('active');
+            $("#menu ul:first li:first").addClass('active');
         }
         });
     });
