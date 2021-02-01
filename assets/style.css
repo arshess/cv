@@ -23,18 +23,8 @@ header, header a{
 }
 header h1{
     font-size: 2em; 
-    /* animation: gl ow 1s ease-in-out infinite alternate;   
-    -moz-animation: glow 1s ease-in-out infinite alternate; */
+
 }
-/* @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  } */
 
 #avatar img{
     border-radius : 50%;
@@ -43,6 +33,12 @@ header h1{
 }
 #social-link i {
     font-size : 1.8em;
+    color : #F5DF4D;
+}
+#social-link i:hover{
+    transition 
+}
+.active{
     color : #F5DF4D;
 }
 nav{
@@ -87,8 +83,6 @@ h2{
     background: #F9966B;
     height : 100vh;
 }
-#truc{
-    position: relative;
-    height: 150px;
-    overflow-y: scroll;
+#services{
+    height : 100vh;
 }
